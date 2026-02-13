@@ -94,5 +94,3 @@ Project ini dikembangkan oleh **Ozzie** untuk keperluan manajemen bisnis pribadi
 ---
 
 © 2024 MLBB Manager. All Rights Reserved.
-
-```
