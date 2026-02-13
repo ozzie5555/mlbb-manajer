@@ -1,16 +1,98 @@
-# React + Vite
+# 📱 MLBB Account Manager Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> **Platform Manajemen Inventaris & Keuangan untuk Reseller Akun Mobile Legends**
 
-Currently, two official plugins are available:
+![Project Status](https://img.shields.io/badge/Status-Active-success)
+![Tech Stack](https://img.shields.io/badge/Stack-React_Vite_Supabase-blue)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🧐 Latar Belakang Masalah (The Problem)
 
-## React Compiler
+Dalam bisnis jual-beli akun game (khususnya Mobile Legends), tantangan terbesar yang sering dihadapi adalah **manajemen data yang berantakan**. 
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* Data akun sering tercecer di berbagai catatan atau chat WhatsApp.
+* Sulit melacak stok akun yang masih tersedia vs yang sudah terjual.
+* Tidak ada rekap otomatis mengenai **Profit & Loss** (Untung/Rugi) bulanan.
+* Screenshot/bukti akun sering hilang di galeri HP.
 
-## Expanding the ESLint configuration
+Project ini dibuat untuk menyelesaikan masalah tersebut dengan menyediakan **Sistem Dashboard Terpusat**.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🚀 Solusi & Fitur Utama
+
+Web aplikasi ini dirancang untuk memudahkan manajemen bisnis reseller akun secara profesional dan kolaboratif.
+
+### 📊 1. Analytics Dashboard (Crypto-Style)
+Visualisasi keuntungan bulanan dengan diagram interaktif mirip chart *trading crypto*. Memudahkan pemantauan arus kas dan performa penjualan secara real-time.
+
+### 💰 2. Profit & Loss Tracking
+Fitur otomatis untuk menghitung margin keuntungan dari setiap transaksi. Sistem mencatat harga beli (modal) dan harga jual untuk kalkulasi laba bersih.
+
+### 📂 3. Manajemen Inventaris Akun
+* **CRUD System:** Tambah, Edit, dan Hapus data akun dengan mudah.
+* **Gallery Integration:** Setiap entry akun dilengkapi fitur upload foto/screenshot spesifikasi akun (Skin, Winrate, dll).
+* **Status Tracking:** Label otomatis untuk akun `Ready`, `Booked`, atau `Sold`.
+
+### 🔐 4. Secure Authentication
+Halaman Login yang aman menggunakan **Supabase Auth**, memastikan hanya admin (saya dan partner) yang bisa mengakses data sensitif dan keuangan.
+
+---
+
+## 🛠️ Teknologi yang Digunakan (Tech Stack)
+
+Project ini dibangun menggunakan teknologi web modern untuk performa yang cepat dan skalabilitas tinggi.
+
+* **Frontend:** [React.js](https://reactjs.org/) + [Vite](https://vitejs.dev/) (Super fast build tool)
+* **Styling:** [Tailwind CSS](https://tailwindcss.com/) (Responsive & Modern UI)
+* **Backend & Database:** [Supabase](https://supabase.com/) (PostgreSQL Database & Authentication)
+* **Deployment:** [Netlify](https://www.netlify.com/)
+
+---
+
+## 💻 Cara Menjalankan Project (Local Development)
+
+Ikuti langkah ini jika ingin menjalankan project di komputer lokal:
+
+**1. Clone Repository**
+```bash
+git clone [https://github.com/ozzie5555/mlbb-manajer.git](https://github.com/ozzie5555/mlbb-manajer.git)
+cd mlbb-manajer
+
+```
+
+**2. Install Dependencies**
+
+```bash
+npm install
+
+```
+
+**3. Konfigurasi Environment Variable**
+Buat file `.env` di root folder dan isi dengan kredensial Supabase kamu:
+
+```env
+VITE_SUPABASE_URL=your_supabase_url
+VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+
+```
+
+**4. Jalankan Aplikasi**
+
+```bash
+npm run dev
+
+```
+
+Buka browser dan akses `http://localhost:5173`.
+
+---
+
+## 🤝 Kontribusi
+
+Project ini dikembangkan oleh **Ozzie** untuk keperluan manajemen bisnis pribadi. Kritik dan saran sangat terbuka melalui [Issues](https://www.google.com/search?q=https://github.com/ozzie5555/mlbb-manajer/issues).
+
+---
+
+© 2024 MLBB Manager. All Rights Reserved.
+
+```
